@@ -1,0 +1,49 @@
+.settings{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.settings input{
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+.settings button{
+    font-size: 20px;
+}
+.settings .price{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.settings .grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 30px;
+    width: 500px;
+    margin: auto;
+}
+.settings .select{
+    width: 500px;
+}
+.settings .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 350px;
+    margin: auto;
+}
+.settings .delete{
+    background-image: url(../images/delete.png);
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: auto;
+    text-align: center;
+}

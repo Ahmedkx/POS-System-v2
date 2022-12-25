@@ -1,0 +1,109 @@
+input[type=number]:not(.arrow)::-webkit-inner-spin-button, 
+input[type=number]:not(.arrow)::-webkit-outer-spin-button { 
+    appearance: none;
+}
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(49,49,49,0.8);
+    z-index: 1;
+}
+.modal-content{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #DCDCDC;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 500px;
+    border-radius: 30px;
+    font-size: 32px;
+    z-index: 2;
+}
+.modal .header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 50px;
+    color: black;
+    box-sizing: border-box;
+}
+.modal .header::after{
+    content: "";
+    position: absolute;
+    left: -28px;
+    bottom: -20px;
+    height: 3px;
+    width: calc(100% + 56px);
+    background-color: white;
+}
+.modal .title{
+    color: rgb(82, 3, 82);
+    font-weight: 800;
+}
+.modal .close-btn{
+    background-image: url(../images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: gray;
+    padding: 10px;
+    opacity: 50%;
+    cursor: pointer;
+}
+.modal form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+.modal form .input{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    font-weight: 800;
+}
+.modal form .btn{
+    width: 100%;
+    font-size: 20px;
+    padding: 15px 0;
+    /* font-weight: 800; */
+    border: none;
+    border-radius: 10px;
+    background-color: #7D43E2;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+/* input:not(:placeholder-shown)::after{
+    content: "asad";
+    background-color: red;
+} */
+.modal .barcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.modal label{
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 10px;
+}

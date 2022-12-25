@@ -1,0 +1,13 @@
+.home{
+    background-image: url(../images/reader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: white;
+}
+.home p{
+    text-align: center;
+    font-size: 32px;
+    padding-top: 100px;
+}

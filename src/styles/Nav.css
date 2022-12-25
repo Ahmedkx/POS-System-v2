@@ -1,0 +1,53 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.75);
+
+    position: fixed;
+    top: 0;
+    right: 100px;
+    height: 60px;
+    width: calc(100% - 100px);
+}
+nav .btn{
+    padding: 0 5px;
+    border-radius: 10px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+nav .btn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+nav .add-btn{
+    font-size: 32px;
+}
+nav .add-btn-img{
+    background-image: url(../images/plus.png);
+    width: 32px;
+    height: 32px;
+}
+nav .login-btns{
+    font-size: 20px;
+    min-height: 49px;
+}
+nav .login-btn-img{
+    background-image: url(../images/login.png);
+    width: 32px;
+    height: 32px;
+}
+nav .logout-btn-img{
+    background-image: url(../images/logout.png);
+    width: 32px;
+    height: 32px;
+}

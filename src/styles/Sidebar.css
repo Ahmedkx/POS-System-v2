@@ -1,0 +1,70 @@
+aside{
+    background-color: #40485B;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: -1px 0px 10px 0px rgba(0,0,0,0.75);
+}
+aside .img{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:5px;
+    width: 64px;
+    height: 64px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+aside .img:hover{
+    background-color: darkgray;
+    cursor: pointer;
+}
+aside .img::after{
+    content: attr(name);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    height: 50px;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    background-color: darkgray;
+    border-radius: 10px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+aside .img:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+aside .img-home{
+    background-image: url(../images/home.png);
+}
+aside .img-warehouse{
+    background-image: url(../images/warehouse.png);
+}
+aside .img-wallet{
+    background-image: url(../images/wallet.png);
+}
+aside .img-invoice{
+    background-image: url(../images/invoice.png);
+}
+aside .img-pills{
+    background-image: url(../images/pills.png);
+}
+aside .img-settings{
+    background-image: url(../images/settings.png);
+}
