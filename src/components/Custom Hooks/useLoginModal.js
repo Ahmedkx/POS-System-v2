@@ -28,8 +28,8 @@ export default function useLoginModal() {
                         <div className="title">تسجيل الدخول</div>
                     </div>
                     <form onSubmit={(e)=>handleSubmit(e)}>
-                        <input type="text" name="username" className="input" placeholder="اسم المستخدم" autoComplete="off" onChange={(e)=>handleChange(e)} required/>
-                        <input type="password" name="password" className="input" placeholder="كلمة المرور" autoComplete="off" onChange={(e)=>handleChange(e)} required/>
+                        <input type="text" name="username" className="input" placeholder="اسم المستخدم" autoComplete="off" onChange={(e)=>handleChange(e)} value="1" required />
+                        <input type="password" name="password" className="input" placeholder="كلمة المرور" autoComplete="off" onChange={(e)=>handleChange(e)} value="123" required/>
                         <button className="btn">تسجيل الدخول</button>
                     </form>
                 </div>
