@@ -11,14 +11,14 @@ export default function Nav(props){
     const location = useLocation().pathname;
 
     const [show,setShow] = useState(false)
-    const [loginData, setLoginData] = React.useState({username:"",password:""})
+    const [loginData, setLoginData] = React.useState({username:"admin",password:"admin"})
 
     function handleChange(e){
         setLoginData(prev=>({...prev, [e.target.name]: (e.target.value)}))
     }
     function handleSubmit(e){
         e.preventDefault()
-        if(loginData.username == "1" && loginData.password == "123"){
+        if(loginData.username == "admin" && loginData.password == "admin"){
             props.handleLogin(true)
             setShow(false)
         }
@@ -35,8 +35,8 @@ export default function Nav(props){
                         <div className="title">تسجيل الدخول</div>
                     </div>
                     <form onSubmit={(e)=>handleSubmit(e)}>
-                        <input type="text" name="username" className="input" placeholder="اسم المستخدم" autoComplete="off" onChange={(e)=>handleChange(e)} required/>
-                        <input type="password" name="password" className="input" placeholder="كلمة المرور" autoComplete="off" onChange={(e)=>handleChange(e)} required/>
+                        <input type="text" name="username" className="input" placeholder="اسم المستخدم" autoComplete="off" value={loginData.username} onChange={(e)=>handleChange(e)} required/>
+                        <input type="password" name="password" className="input" placeholder="كلمة المرور" autoComplete="off" value={loginData.password} onChange={(e)=>handleChange(e)} required/>
                         <button className="btn">تسجيل الدخول</button>
                     </form>
                 </div>
